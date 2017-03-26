@@ -1,0 +1,122 @@
+.container {
+  background:lavender;
+  height:800px;
+}
+
+.border-1 {
+ /* border:2px solid blue;*/
+  height:500px;
+  display:flex;
+  justify-content:space-around;
+  background:linear-gradient(skyblue,white,blue);
+  animation-name:border-1;
+}
+
+
+.border-2 {
+  height:50px;
+  width:50px;
+  border-radius:100%;
+    background: radial-gradient(purple, blue);
+   animation-name:border-2;
+  position:relative;
+  animation-duration:10s;
+}
+
+
+.border-3 {
+  height:100px;
+  width:100px;
+  border-radius:100%;
+   align-self:center;
+    background: linear-gradient(teal, yellow);
+  position:relative;
+   animation-name:border-3;
+  animation-duration:20s;
+}
+
+.border-4 {
+  height:150px;
+  width:150px;
+  border-radius:100%;
+  background: linear-gradient(purple, red,orange);
+   animation-name:border-4;
+  animation-duration:12s;
+}
+
+.border-5 {
+  height:200px;
+  width:200px;
+  border-radius:100%;
+  align-self:flex-end;
+  background: linear-gradient(red, yellow);
+   animation-name:border-5;
+}
+.border-6 {
+  height:80px;
+  width:80px;
+  border-radius:100%;
+  align-self:flex-end;
+  background: linear-gradient(blue,red, yellow);
+   animation-name:border-6;
+}
+
+.border-7 {
+  height:50px;
+  width:50px;
+  border-radius:100%;
+    align-self:center;
+  background: linear-gradient(grey, white,yellow);
+   animation-name:border-7;
+}
+
+
+/*Keyframes*/
+@keyframes border-2 {
+   0% {background:linear-gradient(purple, blue);
+  height:100px;width:100px;
+     top:0px;
+  }
+25% {background:linear-gradient(orange, yellow);
+   height:150px;width:150px;
+  top:10px;
+  }
+50% {background:linear-gradient(white,green);
+  height:200px;width:200px;
+  top:20px;
+  }
+75% {background:linear-gradient(blue,purple);
+  height:250px;width:250px;
+  top:30px;
+  }
+100% {background:linear-gradient(yellow,red);
+  top:40px;}
+}
+
+@keyframes border-3{
+  0% {background:linear-gradient(blue,purple);
+  height:50px;width:50px;
+  }
+  25%{bakground:linear-gradient(purple,white);
+  height:100px;width:100px;
+  transform:translateX(0);
+    transform:translateX(200px);
+  }
+50%{background:radial-gradient(yellow,white);
+height:150px;width:150px;left:100px;
+}
+75% {
+  background:radial-gradient(blue,white,red);height:200px;width:200px;left:50px;
+}
+  100% {
+    background:radial-gradient(black,red,white);height:250px;width:250px;top:30px;
+  }
+}
+  
+  @keyframes border-4 {
+    0% {background:linear-gradient(pink,purple);
+  }
+  25%{background:linear-gradient(pink,white,yellow);
+  height:100px;width:100px;left:50px;
+  }
+    50% {background:radial-gradient(blue,yellow,red;);height:50px;width:50px;}
