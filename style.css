@@ -1,16 +1,17 @@
 .container {
   background:lavender;
-  height:800px;
+  height:1000px;
 }
 
 .sky-scape {
  /* border:2px solid blue;*/
-  height:500px;
+  height:600px;
   display:flex;
   justify-content:space-around;
   background:linear-gradient(skyblue,white,blue);
   animation-name:sky-scape;
     animation-duration:20s;
+    animation-timing-function:linear;   
 }
 
 
@@ -22,7 +23,6 @@
   animation-name:planet-1;
   position:relative;
   animation-duration:10s;
-    border:3px solid red;
 }
 
 
@@ -57,6 +57,8 @@
    animation-name:planet-4;
     border:3px solid white;
     animation-duration:9s;
+    position:relative;
+    bottom:100px;
 }
 .planet-5 {
   height:80px;
@@ -142,42 +144,40 @@
 /*START SKY-SCAPE*/
 @keyframes sky-scape {
     0%{background:linear-gradient(skyblue,white,blue);
+     
 }
     25%{
         background:linear-gradient(skyblue,orange,white);
+        
     }
     50%{
         background:linear-gradient(yellow,orange,red);
+        
     }
     75%{
         background:linear-gradient(black,black,black);
+        
     }
     100% {
         background:linear-gradient(black,black,black);
+       
     }
 }
 
-/*START-BALLOON-1*/
+/*START-PLANET-1*/
 @keyframes planet-1 {
    0% {background:linear-gradient(purple, blue);
-  height:100px;
-       width:100px;
-    
+    transform:translate(200px,100px) scale(2) rotate(360deg);
   }
 25% {background:linear-gradient(orange, yellow);
-   height:150px;
-    width:150px;
+    transform:translate(100px,200px) scale(3);
  
   }
 50% {background:linear-gradient(white,green);
-  height:200px;
-    width:200px;
- 
+    transform:translate(90px, 120px) scale(2.5);
   }
+    
 75% {background:linear-gradient(blue,purple);
-  height:250px;
-  width:250px;
- 
   }
 100% {background:linear-gradient(yellow,red);
   }
@@ -185,32 +185,24 @@
 /*END-PLANET-1*/
 
 /*START PLANET-2*/
-@keyframes balloon-2{
+@keyframes planet-2{
   0% {background:linear-gradient(blue,purple);
-  height:50px;
-  width:50px;
+      
+  
   }
   25%{background:linear-gradient(purple,white);
-  height:100px;width:100px;
-  transform:translateX(0);
-  transform:translateX(200px);
+    transform:scale(1.5);
   }
   50%{background:radial-gradient(yellow,white);
-  height:150px;
-   width:150px;
-   
+      transform:translate(50px, 100px)
 }
 75% {
   background:radial-gradient(blue,white,red);
-    height:200px;
-    width:200px;
-   
+   transform:translate(100px,50px) scale(2);
 }
   100% {
     background:radial-gradient(black,red,white);
-    height:250px;
-      width:250px;
-      
+      transform:translate(150px, 100px;);
   }
 }
 /*-END PLANET-2*/
@@ -218,14 +210,13 @@
   /*START PLANET-3*/
   @keyframes planet-3 {
     0% {background:linear-gradient(pink,purple);
+        transform:scale(1.5);
   }
   25%{background:linear-gradient(pink,white,yellow);
-  height:100px;
-  width:100px;
+    transform:translate(50px,100px);
   }
   50% {background:radial-gradient(blue,yellow,red);
-  height:50px;
- width:50px;
+    transform:translate(100px, 50px);
       }
       
  75% {
@@ -244,18 +235,23 @@
 @keyframes planet-4 {
     0% {
         background:radial-gradient(#1aff1a,#c2f0f0,#eb99ff);
+        transform:translate(200px,100px;)
     }
     25%{
         background:radial-gradient(#990099,#ff8533,##ff9999);
+        transform:scale(1.5);
     }
     50%{
         background:radial-gradient(#b3ffd9,#99ff33,#ff33bb);
+        transform:translate(40px,80px);
     }
     75%{
         background:radial-gradient(#001a4d,#ddffcc,#e600e6);
+        transform:translate(30px,-100px);
     }
     100%{
-        background:radial-gradient(#b3ffd9,#ffff4d, #ff8080)
+        background:radial-gradient(#b3ffd9,#ffff4d, #ff8080);
+            transform:translate(200px, 100px);
     }
 }
 
@@ -266,18 +262,23 @@
 @keyframes planet-5{
   0% {
         background:radial-gradient(#e6ccff,#ffdb4d,#ff1a1a);
+      transform:translate(100px,100px),
     }
     25%{
         background:radial-gradient(#3bb300,#33ffcc,#8585e0);
+        transform:scale(1.5);
     }
     50%{
         background:radial-gradient(#ff33ff,#ffb3cc.#ffff1a);
+        transform:translate(150px, 100px,);
     }
     75%{
         background:radial-gradient(#e600e6,#4dff88,#0000b3);
+        transform:skew(2);
     }
     100%{
         background:radial-gradient(#9999ff,#ff3399, #ffffb3);
+        transform:translate(50px,50px);
     }
 }
 
