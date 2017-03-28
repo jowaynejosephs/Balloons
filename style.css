@@ -166,11 +166,11 @@
 
 /*START-PLANET-1*/
 @keyframes planet-1 {
-   0% {background:linear-gradient(purple, blue);
-    transform:translate(200px,100px) scale(2) rotate(360deg);
+   0% {background:linear-gradient(purple, blue,yellow);
+    transform:translate(100px,100px) scale(2);
   }
 25% {background:linear-gradient(orange, yellow);
-    transform:translate(100px,200px) scale(3);
+    transform:translate(100px,100px) scale(3);
  
   }
 50% {background:linear-gradient(white,green);
@@ -191,7 +191,7 @@
   
   }
   25%{background:linear-gradient(purple,white);
-    transform:scale(1.5);
+    transform:translateX(75px) scale(1.5);
   }
   50%{background:radial-gradient(yellow,white);
       transform:translate(50px, 100px)
