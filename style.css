@@ -35,7 +35,7 @@
   position:relative;
    animation-name:planet-2;
   animation-duration:20s;
-    border:3px solid purple;
+   
 }
 
 .planet-3 {
@@ -45,7 +45,7 @@
   background: linear-gradient(purple, red,orange);
    animation-name:planet-3;
   animation-duration:12s;
-    border:3px solid green;
+   
 }
 
 .planet-4 {
@@ -55,8 +55,7 @@
   align-self:flex-end;
   background: linear-gradient( #80b3ff, #33ff77, #ff99c2);
    animation-name:planet-4;
-    border:3px solid white;
-    animation-duration:9s;
+    animation-duration:15s;
     position:relative;
     bottom:100px;
 }
@@ -66,7 +65,7 @@
   border-radius:100%;
   background: linear-gradient(blue,red, yellow);
    animation-name:planet-5;
-    animation-duration:10s;
+    animation-duration:17s;
 }
 
 .planet-6 {
@@ -76,7 +75,7 @@
     align-self:center;
   background: linear-gradient(grey, white,yellow);
    animation-name:planet-6;
-    animation-duration:10s;
+    animation-duration:15s;
 }
 /*START STARS*/
 
@@ -210,7 +209,7 @@
   /*START PLANET-3*/
   @keyframes planet-3 {
     0% {background:linear-gradient(pink,purple);
-        transform:scale(1.5);
+        transform:translate(50px);
   }
   25%{background:linear-gradient(pink,white,yellow);
     transform:translate(50px,100px);
@@ -221,11 +220,11 @@
       
  75% {
     background:radial-gradient(red,purple,green);
-    border:2px solid blue;
+   transform:translateY(100px) scale(1);
       }
 100%{
     background:radial-gradient(pink, yellow, blue);
-    border:4px solid white;
+    
       }
 }
 /*END PLANET-3*
@@ -262,11 +261,11 @@
 @keyframes planet-5{
   0% {
         background:radial-gradient(#e6ccff,#ffdb4d,#ff1a1a);
-      transform:translate(100px,100px),
+      transform:translate(100px,-100px),
     }
     25%{
         background:radial-gradient(#3bb300,#33ffcc,#8585e0);
-        transform:scale(1.5);
+       
     }
     50%{
         background:radial-gradient(#ff33ff,#ffb3cc.#ffff1a);
@@ -274,7 +273,7 @@
     }
     75%{
         background:radial-gradient(#e600e6,#4dff88,#0000b3);
-        transform:skew(2);
+         transform:scale(1.5);
     }
     100%{
         background:radial-gradient(#9999ff,#ff3399, #ffffb3);
@@ -287,18 +286,23 @@
 @keyframes planet-6{
   0% {
         background:radial-gradient(#bf00ff,#0055ff,#b3ff1a);
+      transform:translate(100px,100px,);
     }
     25%{
         background:radial-gradient( #ff661a,#9fdfbf,#ff0000);
+        transform:scale(1.5);
     }
     50%{
         background:radial-gradient(#ffece6,#ffb3ff,#80e5ff);
+        transform:translateY(90px);
     }
     75%{
         background:radial-gradient(#ff4da6,#ffff66,#004d00);
+        transform:translateX(50px);
     }
     100%{
         background:radial-gradient(#b3cccc,#e699ff,#d2ff4d);
+        transform:scale(2);
     }
 }
 /*-END PLANET-6*/
