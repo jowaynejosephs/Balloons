@@ -11,7 +11,8 @@
   background:linear-gradient(skyblue,white,blue);
   animation-name:sky-scape;
     animation-duration:20s;
-    animation-timing-function:linear;   
+    animation-timing-function:linear;
+    padding:20px;
 }
 
 
